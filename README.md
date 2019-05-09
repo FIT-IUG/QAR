@@ -1,6 +1,7 @@
 # QAR
 QAR: Quick Attendance registration system using NFC technology (Graduation Project)
 
+# Title
 QAR - Attendance Management System using NFC technology
 
 # By 
