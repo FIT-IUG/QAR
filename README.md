@@ -4,9 +4,9 @@ QAR: Quick Attendance registration system using NFC technology
 QAR - Attendance Management System using NFC technology
 
 # By 
-Abd Alazez M. Alswaisi 
-Ahmed R. Alhessi 
-Hazem H. Hussain 
+* Abd Alazez M. Alswaisi 
+* Ahmed R. Alhessi 
+* Hazem H. Hussain 
 
 # Supervisor
 Dr. Motaz saad
