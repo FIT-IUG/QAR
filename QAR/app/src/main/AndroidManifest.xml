@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abdalazez.qar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:name=".Model.UIApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Control.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+                <data android:mimeType="application/my.uniqueapp.nfc"/>
+                -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+             <!--   <action android:name="android.nfc.action.TAG_DISCOVERED" /> -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Control.MainActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme">
+
+            <!--
+        <intent-filter>
+            <action android:name="android.nfc.action.TAG_DISCOVERED" />
+            <data android:mimeType="application/my.uniqueapp.nfc"/>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".Fragment.Admin.NotificationAction" />
+        <activity android:name=".Sidemenu.ReceivingSms" />
+        <activity android:name=".Sidemenu.SettingsApp" />
+
+        <service
+            android:name=".Control.Notice.MyService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".Control.Notice.LogNotification" />
+        <activity android:name=".Fragment.Admin.AllExams" />
+        <activity android:name=".Fragment.Admin.AllContacts" />
+        <activity android:name=".Fragment.Admin.SwapController" />
+        <activity android:name=".Fragment.Admin.Swap" />
+        <activity android:name=".Fragment.Admin.BroadcastAdmin" />
+        <activity android:name=".Fragment.Controller.BroadcastController" />
+        <activity android:name=".Fragment.Admin.SmsAction" />
+        <activity android:name=".Fragment.Admin.ShowStudents"></activity>
+    </application>
+
+</manifest>

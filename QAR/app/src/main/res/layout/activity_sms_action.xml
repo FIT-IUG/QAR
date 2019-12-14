@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abdalazez.qar.Fragment.Admin.SmsAction">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSmsAction"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        android:layout_marginBottom="5dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorAccent"/>
+
+    <EditText
+        android:id="@+id/enterMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:hint="Enter Message"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/acceptMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Send"/>
+
+</LinearLayout>

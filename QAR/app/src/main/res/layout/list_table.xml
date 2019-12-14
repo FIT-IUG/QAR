@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+    <TextView
+        android:id="@+id/numberRow"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@drawable/border_textview"/>
+
+        <TextView
+            android:id="@+id/courseId"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_textview"/>
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="0dp"
+            android:layout_weight="18"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_textview"/>
+
+        <TextView
+            android:id="@+id/divisionNum"
+            android:layout_width="0dp"
+            android:layout_weight="12"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_textview"/>
+
+        <TextView
+            android:id="@+id/examDate"
+            android:layout_width="0dp"
+            android:layout_weight="19"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_textview"/>
+
+
+        <TextView
+            android:id="@+id/examTime"
+            android:layout_width="0dp"
+            android:layout_weight="18"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_textview"/>
+
+        <TextView
+            android:id="@+id/roomNum"
+            android:layout_width="0dp"
+            android:layout_weight="17"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/border_textview"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/cardview_dark_background"/>
+</LinearLayout>

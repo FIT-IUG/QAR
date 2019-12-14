@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">QAR</string>
+    <string name="student_Registration">Registration</string>
+    <string name="controller_Tables">Tables</string>
+    <string name="controller_Requests">Requests</string>
+    <string name="admin_Notification">Notification</string>
+    <string name="admin_Settings">Settings</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_activity_sample">Sample activity</string>
+    <string name="wait_write_dialog_title">Write on NFC Tag</string>
+    <string name="wait_write_dialog_text">Approach an NFC tag</string>
+    <string name="tag_written_toast">Tag written</string>
+    <string name="cancel">Cancel</string>
+</resources>

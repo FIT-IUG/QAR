@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abdalazez.qar.Fragment.Admin.Swap">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAssignNewCont"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <Spinner
+        android:id="@+id/userExams"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_below="@id/toolbarAssignNewCont"
+         />
+
+    <Spinner
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_below="@id/userExams"
+        />
+
+    <Button
+        android:id="@+id/butSwap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Assign Alternative Controller"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+

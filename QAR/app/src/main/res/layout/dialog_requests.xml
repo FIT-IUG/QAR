@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="18dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:id="@+id/detailsRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Details"
+            android:imeOptions="actionDone"
+            android:inputType="text" />
+
+        <AutoCompleteTextView
+            android:id="@+id/roomNumRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room Number"
+            android:imeOptions="actionDone"
+            android:layout_below="@id/detailsRequest"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/selectStudents"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/roomNumRequest"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/linecut"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Select a case :"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_below="@id/selectStudents"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_below="@id/linecut"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/selector_apology"
+                android:gravity="center"
+                android:text="Apology observing" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/selector_paper"
+                android:gravity="center"
+                android:text="Paper shortage" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/selector_danger"
+                android:gravity="center"
+                android:text="Cheat" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/selector_help"
+                android:gravity="center"
+                android:text="Help Request" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</FrameLayout>

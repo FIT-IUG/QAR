@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <color name="colorPrimary">#37b702</color>
+    <color name="colorPrimaryDark">#087c01</color>
+    <color name="colorAccent">#000000</color>
+    <color name="floating">#43c700</color>
+    <color name="tabbackground">#f6f6f6</color>
+    <color name="toolbar">#099f00</color>
+
+    #ff4081-->
+
+    <color name="colorPrimary">#026fb7</color>
+    <color name="colorPrimaryDark">#01557c</color>
+    <color name="colorAccent">#000000</color>
+    <color name="floating">#009fc7</color>
+    <color name="colorSpinner">#b4dce6</color>
+    <color name="tabbackground">#f6f6f6</color>
+    <color name="toolbar">#026fb7</color>
+    <color name="Red">#ff000d</color>
+    <color name="Green">#02b71d</color>
+</resources>

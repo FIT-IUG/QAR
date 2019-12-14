@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="18dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/linecut"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Choose method of communication :"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_below="@id/roomNumRequest"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupCall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_below="@id/linecut"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonCall"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/selector_call"
+                android:gravity="center"
+                android:text="Call" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSms"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/selector_sms"
+                android:gravity="center"
+                android:text="Sma" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+</FrameLayout>
